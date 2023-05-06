@@ -1,0 +1,38 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "test": {
+      "name": "test",
+      "command": "npm run test",
+      "runAtStart": false
+    },
+    "prepare": {
+      "name": "prepare",
+      "command": "npm run prepare",
+      "runAtStart": false
+    },
+    "travis_script": {
+      "name": "travis_script",
+      "command": "npm run travis_script",
+      "runAtStart": false
+    },
+    "travis_after_success": {
+      "name": "travis_after_success",
+      "command": "npm run travis_after_success",
+      "runAtStart": false
+    },
+    "./script/setup": {
+      "name": "./script/setup",
+      "command": "./script/setup",
+      "runAtStart": true
+    }
+  }
+}
